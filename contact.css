@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height:  100vh;
+    background: linear-gradient(to right top, #ffadad, #ff9393);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.navbar{
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-weight: 700;   
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+}
+
+.nav-links{
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    position: fixed;
+    right: 5rem;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li:hover{
+    transform: translateY(-10%);
+    transition: all 0.2s ease;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: white 3px solid;
+    border-radius: 1rem;
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover{
+    box-shadow: 0 0.5rem 0.5rem -.4rem #586668;
+    transform: translateY(-0.25);
+    filter: invert(1);
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details p{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+/* .details p img:hover{
+    border-radius: 50%;
+    transform: translateY(-10%);
+    box-shadow: 1rem 1rem 1rem -0.2rem #586668;
+} */
+
+.details p span{
+    margin: 2rem 1rem;
+}
+
+.details p img{
+    max-height: 4rem;
+    max-width: 4rem;
+}
+.container{
+    background: linear-gradient(to right bottom, rgba(252, 189, 189, 0.7), rgba(255, 227, 227, 0.3));
+    border-radius: 2rem;
+    padding: 2rem 0rem;
+    box-shadow: 1rem 1rem 1rem -0.2rem #586668;
+}
+
+.links a img{
+    max-width: 5rem;
+    max-height: 5rem;
+    transition: all 0.35s ease;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.detail{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #463e3e;
+}
+.round{
+    border-radius: 50%;
+}
+.border{
+    border-radius: 1rem;
+}
+.links a img:hover{
+    transform: translateY(-10%);
+    box-shadow: 1rem 1rem 1rem -0.2rem #586668;
+}
