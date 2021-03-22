@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height:  100vh;
+    background: linear-gradient(to right top, #90e080, #bfffc2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.navbar{
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-weight: 700;   
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+}
+
+.nav-links{
+    padding-right: 5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    position: fixed;
+    right: 5rem;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li:hover{
+    transform: translateY(-10%);
+    transition: all 0.2s ease;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: white 3px solid;
+    border-radius: 1rem;
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover{
+    box-shadow: 0 0.5rem 0.5rem -.4rem #586668;
+    transform: translateY(-0.25);
+    filter: invert(1);
+}
+
+.aboutContainer{
+    margin-top: 4rem;
+    margin-left: 10rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: linear-gradient(to right bottom, rgba(208, 255, 199, 0.7), rgba(255,255,255,0.3));
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    margin-left: 5rem;
+    padding: 0rem 5rem;
+    box-shadow: 1rem 1rem 1rem -0.2rem #586668;
+}
+.profile{
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+.info{
+    line-height: 1.75rem;
+}
+.info h1{
+    font-size: 3rem;
+    color: #463e3e;
+    transition: all 0.75s ease-out;
+    
+}
+
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.info h4{
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    color: #585858;
+    font-weight: 700;
+    transition: all 0.75s ease-out;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.skills button{
+    padding: 0.5rem 2rem;
+    margin: 0rem 0.75rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    color: #585858;
+}
+ .skills button:hover{
+     color: rgb(0, 0, 0);
+ }
